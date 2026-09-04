@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>AISECT Mizoram</title>
+  <title>AISECT Mizoram | Education & Career Assistant</title>
 
   <style>
     * {
@@ -16,76 +16,147 @@
     body {
       font-family: Arial, sans-serif;
       min-height: 100vh;
+      background: linear-gradient(135deg, #f5f7ff, #eef2f7);
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #f5f7fb;
       padding: 20px;
     }
 
     .container {
-      max-width: 700px;
       width: 100%;
+      max-width: 800px;
       text-align: center;
-      background: white;
-      padding: 60px 30px;
-      border-radius: 20px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      background: #ffffff;
+      padding: 60px 35px;
+      border-radius: 24px;
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+    }
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 20px;
+      border-radius: 18px;
+      background: #5b3cc4;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      font-weight: bold;
     }
 
     h1 {
       font-size: 42px;
-      margin-bottom: 15px;
+      color: #222;
+      margin-bottom: 12px;
     }
 
-    p {
-      font-size: 18px;
-      color: #555;
-      line-height: 1.6;
-      margin-bottom: 35px;
+    .subtitle {
+      font-size: 20px;
+      color: #5b3cc4;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      max-width: 600px;
+      margin: auto;
+      color: #666;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .topics {
+      margin: 35px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .topic {
+      padding: 12px 18px;
+      background: #f1effb;
+      color: #4b32a8;
+      border-radius: 30px;
+      font-size: 15px;
+      font-weight: 600;
     }
 
     .chat-button {
       display: inline-block;
-      padding: 16px 30px;
-      background: #4f46e5;
+      padding: 17px 38px;
+      background: #5b3cc4;
       color: white;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 12px;
       font-size: 18px;
       font-weight: bold;
+      transition: 0.2s;
     }
 
     .chat-button:hover {
-      background: #3730a3;
+      transform: translateY(-2px);
+      background: #472ca5;
     }
 
-    .small-text {
-      margin-top: 25px;
-      font-size: 14px;
-      color: #888;
+    .footer {
+      margin-top: 35px;
+      font-size: 13px;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 45px 20px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .subtitle {
+        font-size: 17px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
+  <main class="container">
+
+    <div class="logo">A</div>
+
     <h1>AISECT Mizoram</h1>
 
-    <p>
-      Ask anything about courses, admissions,
-      universities and skill programmes.
+    <div class="subtitle">
+      Your AI-Powered Education & Career Assistant
+    </div>
+
+    <p class="description">
+      Ask anything about courses, admissions, universities,
+      online programmes and skill development opportunities.
     </p>
 
+    <div class="topics">
+      <div class="topic">UG & PG Courses</div>
+      <div class="topic">Admissions</div>
+      <div class="topic">Skill Programmes</div>
+      <div class="topic">Career Guidance</div>
+    </div>
+
     <a href="#" class="chat-button">
-      Chat with AISECT Mizoram
+      Start Chatting
     </a>
 
-    <div class="small-text">
-      Your AI-powered admission assistant
+    <div class="footer">
+      AISECT Mizoram • Your Education Assistant
     </div>
-  </div>
+
+  </main>
 
 </body>
 </html>
